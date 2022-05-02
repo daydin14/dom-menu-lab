@@ -3,7 +3,7 @@ mainEl.style.backgroundColor = "var(--main-bg)";
 mainEl.innerHTML = "SEI Rocks!";
 mainEl.classList.add("flex-ctr");
 
-const topMenuEl = document.querySelector("top-menu");
+const topMenuEl = document.getElementById("top-menu");
 topMenuEl.style.height = "100%";
 topMenuEl.style.backgroundColor = "var(--top-menu-bg)";
 topMenuEl.classList.add("flex-around");
@@ -15,3 +15,9 @@ var menuLinks = [
     {text: "account", href: "/account"},
 ];
 
+for(let i of menuLinks) {
+    let aEl = document.createElement("a");
+    aEl.setAttribute("href", menuLinks.href);
+    aEl.textContent = i.text;
+    topMenuEl.append(aEl);
+};
