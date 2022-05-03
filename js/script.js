@@ -25,3 +25,4 @@ for (let i of menuLinks) {
 // Part 2
 
 const subMenuEl = document.getElementById("sub-menu");
+subMenuEl.style.height = "100%";
