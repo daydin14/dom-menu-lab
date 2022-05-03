@@ -57,3 +57,12 @@ subMenuEl.style.top = 0;
 const topMenuLinks = topMenuEl.querySelectorAll("a");
 // console.log(topMenuLinks);
 let showingSubMenu = false;
+
+topMenuEl.addEventListener("click", function (event) {
+  event.preventDefault;
+  if (event.target.href) {
+    console.log(event.target);
+  } else {
+    return;
+  }
+});
